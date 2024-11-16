@@ -9,7 +9,7 @@ const Banner = () => {
             <div className="paragraph-banner">
                 <div className="title-banner">
                     <div className="">
-                        <h5 className="">Welcome to Smiles Kindergarten</h5>
+                        <h5 className="">Welcome to Gold Star Child Care</h5>
                     </div>
                 </div>
                 <div className="main-paragraph">

@@ -1,5 +1,5 @@
 import Banner from "../Components/Banner";
-import Navbar from "../components/Navbar";
+import Navbar from "../Components/Navbar";
 
 const Home = () => {
     return (
