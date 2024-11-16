@@ -120,27 +120,27 @@
         width: 100%;
         display: block;
     }
-    .notrote {
-        position: absolute;
-        top: 10px;
-        left: 3.5rem;
-        width: 2rem;
-        height: 2rem;
-        background: url(../../public/images/icon/rightmenu.png) center no-repeat;
-        background-size: 1rem;
-        transition: all 0.5s;
-    }
-    .rote {
-        position: absolute;
-        top: 10px;
-        left: 3.5rem;
-        width: 2rem;
-        height: 2rem;
-        background: url(/_next/static/media/rightmenu.16b62880.png) center no-repeat;
-        background-size: 1rem;
-        transform: rotate(90deg);
-        transition: all 0.5s;
-    }
+    // .notrote {
+    //     position: absolute;
+    //     top: 10px;
+    //     left: 3.5rem;
+    //     width: 2rem;
+    //     height: 2rem;
+    //     background: url(../../public/images/icon/rightmenu.png) center no-repeat;
+    //     background-size: 1rem;
+    //     transition: all 0.5s;
+    // }
+    // .rote {
+    //     position: absolute;
+    //     top: 10px;
+    //     left: 3.5rem;
+    //     width: 2rem;
+    //     height: 2rem;
+    //     background: url(/_next/static/media/rightmenu.16b62880.png) center no-repeat;
+    //     background-size: 1rem;
+    //     transform: rotate(90deg);
+    //     transition: all 0.5s;
+    // }
     ul li {
         font-size: 10px;
     }
