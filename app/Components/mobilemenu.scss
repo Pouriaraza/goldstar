@@ -1,0 +1,171 @@
+.MOBILE-MENU {
+    padding: 10px 1rem;
+    z-index: 999;
+    display: flex;
+    .social {
+        display: flex;
+        height: fit-content;
+        .be,
+        .mail {
+            background-position-y: 4px;
+        }
+        li {
+            display: inline-block;
+            list-style: none;
+        }
+    }
+    .menuhead {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    > div:nth-child(1) {
+        background-color: rgb(249 137 142);
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0rem;
+        color: white;
+        z-index: 99;
+        padding: 1rem;
+        > ul li {
+            list-style: none;
+        }
+    }
+    .HAMBURGER-ICON {
+        span {
+            display: block;
+            width: 4ch;
+            margin-top: 10px;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+    svg {
+        width: 3rem;
+    }
+    .BrandDesignA,
+    .SocialMediaA {
+        font-size: 1rem;
+    }
+    .hideMenuNav {
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                a::after {
+                    display: none !important;
+                }
+                a {
+                    display: block;
+                    color: white;
+                    padding-left: 1rem;
+                    padding-top: 1rem;
+                }
+            }
+            .work {
+                padding-left: 1rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+    .showMenuNav {
+        right: -2rem;
+        transition: all 1s;
+
+        .SocialMediaitem,
+        .BrandDesignitem {
+            li {
+                padding: 0 !important;
+                a {
+                    margin: 0;
+                    padding-top: 5px;
+                }
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                a::after {
+                    display: none !important;
+                }
+                a {
+                    display: block;
+                    color: white;
+                    padding-left: 1rem;
+                    padding-top: 1rem;
+                }
+            }
+            .work {
+                padding-left: 1rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+.hideMenuNav {
+    right: -21rem;
+    transition: all 1s;
+}
+.workitem {
+    position: relative;
+    li ul li {
+        padding: 1rem;
+        padding: 5px;
+        padding-top: 5px !important;
+    }
+    .work {
+        width: 100%;
+        display: block;
+    }
+    .notrote {
+        position: absolute;
+        top: 10px;
+        left: 3.5rem;
+        width: 2rem;
+        height: 2rem;
+        background: url(../../public/images/icon/rightmenu.png) center no-repeat;
+        background-size: 1rem;
+        transition: all 0.5s;
+    }
+    .rote {
+        position: absolute;
+        top: 10px;
+        left: 3.5rem;
+        width: 2rem;
+        height: 2rem;
+        background: url(/_next/static/media/rightmenu.16b62880.png) center no-repeat;
+        background-size: 1rem;
+        transform: rotate(90deg);
+        transition: all 0.5s;
+    }
+    ul li {
+        font-size: 10px;
+    }
+}
+.showWork {
+    visibility: visible;
+    opacity: 1;
+    transition:
+        visibility 0s,
+        opacity 0.5s linear;
+}
+.hideWork {
+    visibility: hidden;
+    opacity: 0;
+    transition:
+        visibility 0s,
+        opacity 0.5s linear;
+    height: 0;
+}
+
+@media (min-width: 460px) {
+    .MOBILE-MENU {
+        display: none;
+    }
+    .inside-menu {
+        height: 0;
+    }
+}

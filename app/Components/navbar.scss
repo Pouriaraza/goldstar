@@ -1,0 +1,43 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    position: relative;
+    .desktopmenu {
+        nav {
+            ul {
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin: 5px 10px;
+                    a {
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 10rem;
+            height: fit-content;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .desktopmenu {
+        display: none;
+    }
+    header {
+        .logo {
+            img {
+                width: 8rem;
+            }
+        }
+    }
+}
