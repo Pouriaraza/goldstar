@@ -94,8 +94,13 @@
 @media (max-width: 495px) {
     .banner {
         .paragraph-banner {
+            .title-banner {
+                font-size: 20px;
+            }
+
+            padding: 0 1rem;
             .main-paragraph {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             span {
             }
