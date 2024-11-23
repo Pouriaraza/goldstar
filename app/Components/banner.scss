@@ -14,7 +14,6 @@
         left: 0;
         z-index: -1;
 
-        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -90,10 +89,10 @@
 
 @media (max-width: 495px) {
     .banner::after {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover !important;
+        --padding-top: 150px;
+        --padding-bottom: 120px;
+        --padding-left: 20px;
+        --padding-right: 20px;
     }
     .banner {
         .paragraph-banner {
