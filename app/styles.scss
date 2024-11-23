@@ -31,10 +31,41 @@ body {
 
     color: $OR;
 }
-
+.common_style {
+    text-align: right;
+    img {
+        object-fit: contain;
+    }
+}
 @media (min-width: 922px) {
     body {
         max-width: 1280px;
-        margin: auto;
+        margin: auto !important;
+    }
+}
+@media (max-width: 768px) {
+    .mbody .about_section {
+        margin-top: 0;
+        .container .row {
+            flex-direction: column;
+        }
+    }
+    .admission_section,
+    .determine_section {
+        .container .row {
+            flex-direction: column-reverse;
+        }
+    }
+    .mbody .common_style img {
+        width: 60%;
+        height: auto;
+        // margin-top: 0;
+    }
+    .common_style p {
+        font-size: 0.8rem;
+    }
+    .mbody .common_style > section {
+        margin-top: 1rem;
+        padding: 0;
     }
 }
