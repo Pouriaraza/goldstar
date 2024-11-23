@@ -90,7 +90,10 @@
 
 @media (max-width: 495px) {
     .banner::after {
-        background-size: auto;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover !important;
     }
     .banner {
         .paragraph-banner {
