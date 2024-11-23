@@ -89,6 +89,9 @@
 }
 
 @media (max-width: 495px) {
+    .banner::after {
+        background-size: auto;
+    }
     .banner {
         .paragraph-banner {
             padding: 0 1rem;
