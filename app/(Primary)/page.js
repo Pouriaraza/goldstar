@@ -1,7 +1,7 @@
 import Banner from "../Components/Banner";
 import Common from "../Components/Common";
 import Navbar from "../Components/Navbar";
-
+import Whyus from "../Components/Whyus";
 
 const Home = () => {
     return (
@@ -9,6 +9,7 @@ const Home = () => {
             <Navbar />
             <Banner />
             <Common />
+            <Whyus />
         </section>
     );
 };

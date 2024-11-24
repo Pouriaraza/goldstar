@@ -1,0 +1,91 @@
+.whyus {
+    h2 {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #f74860;
+        padding: 1rem 0;
+    }
+    .whyus-grid {
+        display: flex;
+
+        .description {
+            font-size: 1.1rem;
+            color: #576376;
+            ul {
+                li {
+                    list-style: none;
+                    position: relative;
+                    margin-top: 10px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 5px;
+                        left: -1.2rem;
+                        display: flex;
+                        width: 18px;
+                        height: 18px;
+                        background: url(../../public/Images/icon/check.png) center center no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+        .whyus-item {
+            width: 50%;
+        }
+    }
+
+    .cart-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        color: #576376;
+        h5 {
+            color: #f74860;
+            font-family: GamjaFlower;
+            font-size: 1.5rem;
+        }
+        .cart-item {
+            width: 45%;
+            padding: 1rem;
+            border-radius: 15px;
+            margin: 5px;
+            border: 2px solid #8ae0e5;
+            line-height: 2rem;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .whyus {
+        .cart-grid {
+            flex-direction: column;
+            .cart-item {
+                width: fit-content;
+            }
+        }
+        h2 {
+            text-align: center;
+            display: none;
+        }
+        .whyus-grid {
+            flex-direction: column;
+            .description {
+                text-align: left;
+                padding: 0 2rem;
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+            .whyus-item {
+                width: 100%;
+            }
+        }
+    }
+}
